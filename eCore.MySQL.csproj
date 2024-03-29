@@ -9,10 +9,10 @@
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Version>1.0.2</Version>
-    <Title>Nexd.MySQL</Title>
+    <Version>1.0.0</Version>
+    <Title>eCore.MySQL</Title>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/KillStr3aK/MySqlWrapper</RepositoryUrl>
+    <RepositoryUrl>https://github.com/M4TSKI/eCore.MySQL</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>mysql;wrapper;database;csharp</PackageTags>
   </PropertyGroup>
