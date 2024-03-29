@@ -14,7 +14,7 @@
     <RepositoryUrl>https://github.com/M4TSKI/eCore.MySQL</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>mysql;wrapper;database;csharp</PackageTags>
-    <Authors>eCore</Authors>
+    <Authors>m3ntor</Authors>
     <Company>eKill</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
