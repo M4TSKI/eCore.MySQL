@@ -2,7 +2,7 @@
 
 namespace eCore.MySQL;
 
-public class eDatabase(string connectionString)
+public class Database(string connectionString)
 {
     private readonly string dbConnectionString = connectionString;
 

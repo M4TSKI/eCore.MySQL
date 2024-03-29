@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>eCore.MySQL</id>
+    <version>1.0.2</version>
+    <title>eCore.MySQL</title>
+    <authors>m3ntor</authors>
+    <owners>eKill</owners>
+    <description>Provides a wrapper around MySqlConnector</description>
+    <releaseNotes></releaseNotes>
+    <copyright></copyright>
+    <tags>mysql;wrapper;database;csharp</tags>
+    <repository type="git" url="https://github.com/M4TSKI/eCore.MySQL" />
+    <license type="file">LICENSE.md</license>
+    <dependencies>
+      <dependency id="MySqlConnector" version="2.3.6" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="LICENSE.md" target="" />
+    <file src="README.md" target="" />
+  </files>
+</package>
