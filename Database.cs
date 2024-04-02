@@ -36,5 +36,47 @@ public class Database(string connectionString)
         }
         return connection;
     }
+
+
+    public MySqlConnection GetConnectionSync()
+    {
+        ;
+        try
+        {
+            MySqlConnection? connection = null;
+            connection = new MySqlConnection(dbConnectionString);
+            connection.Open();
+            return connection;
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"[eCore.MySQL] {ex.Message}");
+            Console.ResetColor();
+            throw;
+        }
+    }
+
+    public void OnConnectionSync(Action<MySqlConnection> action)
+    {
+        using (MySqlConnection connection = GetConnectionSync())
+        {
+            try
+            {
+                action(connection);
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"[eCore.MySQL] {ex.Message}");
+                Console.ResetColor();
+                throw;
+            }           
+            finally
+            {
+                connection.Close();
+            }
+        }
+    }
     
 }
